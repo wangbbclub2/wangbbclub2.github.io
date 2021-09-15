@@ -1,0 +1,172 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	background: url("imgs/pexels_cottonbro_5483064.jpg"); 
+	background-repeat: no-repeat;
+	background-position: right -250px;  /*left:0，top:-300px，只能設定left跟top*/
+	background-size:  auto 1500px;
+}
+
+.nav {
+	width: 100%;
+	height: 100px;
+	/* background: #444; */
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	
+}
+
+.nav::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #444;
+	opacity: 0.5;
+}
+
+.nav .ul {
+	margin: 0;
+	/* background: #777; */
+	height: 100%;
+	position: absolute;
+	right: 0;
+	padding: 0;
+}
+
+.nav .ul li {
+	display: inline-block;
+	background: #aaa;
+	height: 60px;
+	margin: 15px 20px;
+	width: 200px;
+	font-size: 40px;
+	text-align: center;
+	border-radius: 10px;
+	padding-top: 10px;
+}
+
+.nav i {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+	body {
+		background-position: right top;
+		background-size:  auto 100vh;
+	}
+	
+	.nav {
+	width: 30%;
+	height: 100vh;
+	position: absolute;
+	right: 0;
+	align-items: center;
+	flex-direction: column-reverse;
+	}
+
+	.nav .ul {
+		text-align: center;
+	}
+
+	.nav .ul li {
+		margin: 10% auto;
+		width: 70%;
+	}
+
+	.nav i {
+		display: block;
+		font-size: 50px;
+		color: #fff;
+		margin-bottom: 30%;
+		z-index: 100;
+	}
+
+}
+
+@media (max-width: 576px) {
+	body {
+		background-position: right top;
+		background-size: auto 100vh;
+	}
+
+	.nav {
+		width: 100%;
+		height: 100vh;
+	}
+
+	.nav i {
+		display: block;
+		font-size: 50px;
+		color: #fff;
+		margin-bottom: 10%;
+		z-index: 100;
+	}
+}
+
+@media (max-height: 450px) {
+	body {
+		background-position: right top;
+		background-size:  100%;
+	}
+
+	.nav {
+		width: 20%;
+		height: 100vh;
+		position: absolute;
+		right: 0;
+		align-items: center;
+		flex-direction: column-reverse;
+		}
+	
+		.nav .ul {
+			text-align: center;
+		}
+	
+		.nav .ul li {
+			margin: 10% auto;
+			width: 70%;
+			height: 10%;
+			font-size: 20px;
+		}
+	
+		.nav i {
+			display: block;
+			font-size: 25px;
+			color: #fff;
+			margin-bottom: 30%;
+			z-index: 100;
+		}
+}
+
+
+/* @media (min-height: 600px) and (max-width: 850px){ */
+	/* body { */
+		/* background-position: right top; */
+		/* background-size:  100% auto; */
+	/* } */
+/* } */
+
+
+
+
+
+
